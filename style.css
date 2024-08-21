@@ -1,0 +1,434 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+/* initialize margin and padding zero initially*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg-new.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+    height: 70vh;
+    position: relative;
+    /* margin-bottom: 30px; */
+}
+@media screen and (max-width:450px) {
+    .main{
+        background-size: max(2000px, 100vw);
+    }
+}
+nav {
+    max-width: 75vw;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+}
+
+@media screen and (max-width:700px) {
+    nav {
+        max-width: 90vw;
+    }
+}
+
+.logo {
+    width: 135px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+.navbutton {
+    position: relative;
+    z-index: 10;
+}
+
+.main .box {
+    width: 100%;
+    height: 70vh;
+    opacity: 0.60;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+/* @media screen and (max-width:500px) {
+    .main {
+        height: 50vh;
+    }
+
+    .main .box {
+        height: 50vh;
+    }
+} */
+
+.main .topbox {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.25;
+}
+
+.container-1 {
+    font-family: 'Netflix Font', sans-serif;
+    height: calc(100% - 73px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    top: 0;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.container-1 h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 960px) {
+    .container-1 h1 {
+        font-size: 2rem;
+        max-width: 70%;
+        font-weight: 700;
+    }
+}
+
+.container-1 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0 0;
+}
+
+@media screen and (max-width: 960px) {
+    .container-1 p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin: 1rem 0 0;
+    }
+}
+
+.container-1 .formbox h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 960px) {
+    .container-1 .formbox h3 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+.formbox {
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 70%;
+}
+
+.input-1 {
+    margin-top: 1rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    height: 8px;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.btn {
+    padding: 3px 8px;
+}
+
+.select-btn {
+    padding: 6px 25px;
+    background: transparent;
+    color: white;
+    font-weight: 400;
+    border-radius: 0.25rem;
+    border: 1px solid white;
+}
+
+@media screen and (max-width:700px) {
+    .select-btn {
+        padding: 3px 8px;
+    }
+}
+
+.btn-red-sm {
+    padding: 6px 20px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 0.25rem;
+    font-weight: 400;
+    color: white;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:700px) {
+    .btn-red-sm {
+        padding: 3px 8px;
+    }
+}
+
+.btn-red {
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.50rem 0.5rem;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    border: solid red;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+@media screen and (min-width:960px) {
+    .btn-red {
+        margin-left: 10px;
+    }
+}
+
+.email {
+    width: 300px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.9rem 0.5rem;
+    border-radius: 0.25rem;
+    background: transparent;
+    background-clip: padding-box;
+    border: 0.5px solid gray;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+@media screen and (max-width: 450px){
+    .email{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .btn-red {
+        margin-top: 20px;
+    }
+}
+
+main .first {
+    display: flex;
+    font-family: 'Netflix Font', sans-serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    height: 100%;
+    margin: auto;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    main .first {
+        display: block;
+    }
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.first .info-1 h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+
+.first .info-1 p {
+    margin: 0 0;
+    max-width: 85%;
+    padding-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+@media screen and (max-width:1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .first .info-1 h2 {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .first .info-1 p {
+        max-width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .secImg img {
+        width: 380px;
+    }
+
+    .secImg video {
+        width: 380px;
+    }
+}
+
+section.first>div {
+    font-family: 'Netflix Font', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.faq h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width:960px) {
+    .faq h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.faq {
+    background: black;
+    color: white;
+    font-family: 'Netflix Font', sans-serif;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 14px auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px) {
+    .faqbox {
+        font-size: 18px;
+        padding: 20px;
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    section {
+        margin-bottom: 30px;
+    }
+}
+
+.space2 .formbox .input-1 .btn-red {
+    margin-bottom: 45px;
+}
+
+.space2 {
+    margin-top: -40px;
+}
+
+@media screen and (max-width:960px) {
+    .space3 {
+        margin-top: -60px;
+        margin-bottom: 50px;
+    }
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Netflix Font', sans-serif;
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 960px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
